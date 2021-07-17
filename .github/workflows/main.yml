@@ -18,6 +18,3 @@ jobs:
       - name: Is there any valgrind error?
         run: |
           tests/valgrind_checker.sh
-      - name: Is there any norm error?
-        run: |
-          tests/norm_checker.sh

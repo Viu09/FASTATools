@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2021
-** FASTATools
+** FASTA [WSL: Ubuntu-20.04]
 ** File description:
 ** display_usage
 */
