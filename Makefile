@@ -1,12 +1,20 @@
-NAME	= program
+##
+## EPITECH PROJECT, 2021
+## FASTATools
+## File description:
+## Makefile
+##
 
-CC	= 
+NAME	= FASTAtools
+
+CC		= 	gcc
 
 RM	= rm -f
 
-SRCS	= 
+SRCS	= 	main.c									\
+			src/display/display_usage.c
 
-OBJS	= $(SRCS:=.o)
+OBJS	= $(SRCS:.c=.o)
 
 CFLAGS = -I 
 CFLAGS += -Wall -Wextra
