@@ -1,0 +1,23 @@
+name: Tests
+
+on: [push, workflow_dispatch]
+
+jobs:
+  tests:
+
+    runs-on: ubuntu-latest
+    container: epitechcontent/epitest-docker
+
+    steps:
+
+      - uses: actions/checkout@v2
+
+      - name: Can build?
+        run: |
+          make && make re && make clean && make fclean
+      - name: Is there any valgrind error?
+        run: |
+          tests/valgrind_checker.sh
+      - name: Is there any norm error?
+        run: |
+          tests/norm_checker.sh
